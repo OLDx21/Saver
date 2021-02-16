@@ -146,18 +146,18 @@ public class addsec extends AppCompatActivity {
     }
 
     public static String readcode(String pass){
-        String password = "privet";
+        String password = "******";
         if (password == null) {
             throw new IllegalArgumentException("Run with -Dpassword=<password>");
         }
 
 
-        byte[] salt = new String("57765675").getBytes();
+        byte[] salt = new String("*********").getBytes();
 
 
-        int iterationCount = 54904;
+        int iterationCount = *****;
 
-        int keyLength = 128;
+        int keyLength = ***;
         SecretKeySpec key = null;
         try {
             key = createSecretKey(password.toCharArray(),
@@ -184,18 +184,18 @@ public class addsec extends AppCompatActivity {
     }
 
     public static String creatkode(String pass){
-        String password = "privet";
+        String password = "******";
         if (password == null) {
             throw new IllegalArgumentException("Run with -Dpassword=<password>");
         }
 
 
-        byte[] salt = new String("57765675").getBytes();
+        byte[] salt = new String("********").getBytes();
 
 
-        int iterationCount = 54904;
+        int iterationCount = ******;
 
-        int keyLength = 128;
+        int keyLength = ******;
         SecretKeySpec key = null;
         try {
             key = createSecretKey(password.toCharArray(),
