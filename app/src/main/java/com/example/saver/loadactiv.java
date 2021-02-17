@@ -75,14 +75,31 @@ Button delete;
         delete= findViewById(R.id.delete);
         listView = findViewById(R.id.list);
 
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                String pas = readcode(info.getSec());
 
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        sec.getEditText().setText(pas);
+
+                    }
+                });
+
+            }
+        }).start();
         ActionBar actionBar = getSupportActionBar();
         actionBar.setHomeButtonEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         name.getEditText().setText(info.getNamee());
         login.getEditText().setText(info.getLogin());
-        sec.getEditText().setText(readcode(info.getSec()));
+
+
+
+
 
 
 

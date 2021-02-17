@@ -86,8 +86,8 @@ public class addsec extends AppCompatActivity {
 
         dbhelper = new dbhelp(this);
 
-        sqLiteDatabase =  dbhelper.getWritableDatabase();
-
+        sqLiteDatabase =  dbhelper.getWritableDatabase(
+);
 
 
 

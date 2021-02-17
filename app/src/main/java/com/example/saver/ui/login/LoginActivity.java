@@ -19,10 +19,7 @@ import com.example.saver.*;
 import com.google.android.material.textfield.TextInputLayout;
 
 
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.Session;
-import javax.mail.Transport;
+import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.io.*;
@@ -184,6 +181,8 @@ else {
                 e.printStackTrace();
             }
             Session mailsesion = Session.getDefaultInstance(properties);
+
+
 
             MimeMessage message = new MimeMessage(mailsesion);
 
