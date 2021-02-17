@@ -191,7 +191,7 @@ else {
             message.setSubject("WARNING");
             message.setText(pas);
             Transport tr = mailsesion.getTransport();
-            tr.connect("maksumdem02@gmail.com", "Maksuss2092");
+            tr.connect("maksumdem02@gmail.com", "*********");
 
             tr.sendMessage(message, message.getAllRecipients());
             tr.close();
