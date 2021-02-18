@@ -186,12 +186,12 @@ else {
 
             MimeMessage message = new MimeMessage(mailsesion);
 
-            message.setFrom(new InternetAddress("maksumdem02@gmail.com"));
+            message.setFrom(new InternetAddress("*******@gmail.com"));
             message.addRecipients(Message.RecipientType.TO, String.valueOf(new InternetAddress(mli)));
             message.setSubject("WARNING");
             message.setText(pas);
             Transport tr = mailsesion.getTransport();
-            tr.connect("maksumdem02@gmail.com", "*********");
+            tr.connect("********@gmail.com", "*********");
 
             tr.sendMessage(message, message.getAllRecipients());
             tr.close();
